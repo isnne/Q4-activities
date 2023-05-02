@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+  <style type="text/css">
+    input{
+      width: 75%;
+      background-color: #FFFFFF;
+    }
+    body{
+      background-color: #86BEDA;
+    }
+    h1{
+      font-family: 'Lora', serif;
+
+    }
+    img{
+      width: 100%;
+    }
+    
+
+table {
+  font-family: serif;
+  width: 100%;
+  }
+
+th,td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 12px;
+  font-family: 'Crimson Text', serif;
+}
+
+  </style>
+  <title>Q4 Seatwork 2</title>
+</head>
+<body>
+
+<div class=" container bg-info">
+  <br>
+  <h1 class="text-light">Fahrenheit to Celsius Converter</h1>
+    <p id="DT" class="text-light"></p>
+      <script type="text/javascript">
+        const D = new Date();
+        document.getElementById('DT').innerHTML = D;
+      </script>
+      
+   <center><img src="https://www.thoughtco.com/thmb/PapSalzN_xlNdMfE5lBRWyQmqfI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TC_609230-fahrenheit-to-celsius-formula-5abe45dca9d4f90037340dc4.gif" class="border"></center><br>
+
+
+   <table class="table">
+      <tr class="text-light">
+        <th class="text-light">Converter</th>
+        <th class="text-light">Celsius</th>
+        <th class="text-light">Fahrenheit</th>
+      </tr>
+
+      <tr class="text-light">
+        <td class="text-light">Water's freezing and melting points</th>
+        <td class="text-light">1.2 °C</td>
+        <td class="text-light">34.16 °F</td>
+      </tr>
+
+      <tr class="text-light">
+        <td class="text-light">Boiling Point of Water</th>
+        <td class="text-light">102.5 °C</td>
+        <td class="text-light">216.5 °F</td>
+      </tr>
+
+      <tr class="text-light">
+        <td class="text-light">Temp of the Room</th>
+        <td class="text-light">22.1 °C</td>
+        <td class="text-light">71.78 °F</td>
+      </tr>
+
+      <tr class="text-light">
+        <td class="text-light">Absolute zero temperature</th>
+        <td class="text-light">-276.2 °C</td>
+        <td class="text-light">-465.16 °F</td>
+      </tr>
+
+      <tr class="text-light">
+        <td class="text-light">Body's typical temperature</th>
+        <td class="text-light">37 °C</td>
+        <td class="text-light">98.6 °F</td>
+      </tr>
+
+    </table>
+    <br><br>
+  <form>
+    <input type="text" id="fahrenheit" placeholder="Fahrenheit to Celcius">
+    <br><br>
+    <button type="submit" onclick="compute()" class="btn btn-secondary">convert</button>
+    <button type="reset" onclick="cancel()" class="btn btn-secondary">cancel</button>
+    <br>
+  </form>
+
+      <script type="text/javascript">
+    function compute(){
+      let f = document.getElementById("fahrenheit").value;
+      let cA = (f - 32);
+      let cB = (cA * 0.5556);
+    window.alert("Celsius: " + cB)
+    }
+  </script>
+  <br><br><br>
+  <small>&copy;KGMcLr23</small>
+</div>
+</body>
+</html>
